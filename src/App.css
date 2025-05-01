@@ -1,0 +1,111 @@
+body {
+  background: #111 url("Logo-6GMA-no-bg.png") no-repeat top center;
+  background-size: 5%;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+h1 {
+  color: gold;
+  text-shadow: 2px 2px 10px red;
+}
+
+#gameArea {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  position: relative;
+}
+
+#slots {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.slot {
+  width: 150px;
+  height: 150px;
+  background: #222;
+  border: 4px solid gold;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px gold;
+}
+
+.roller {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.name {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-bottom: 1px solid #444;
+}
+
+.role {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#leverContainer {
+  width: 80px;
+  height: 300px;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+#leverTrack {
+  width: 10px;
+  height: 100%;
+  background: silver;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#leverHandle {
+  width: 40px;
+  height: 40px;
+  background: red;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px red;
+  transition: top 0.3s ease-in-out;
+}
+
+#leverContainer.active #leverHandle {
+  top: 80%;
+  box-shadow: 0 0 20px white;
+}
+
+#exclusionList {
+  margin-top: 40px;
+}
+
+#exclusionList label {
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+h2 {
+  margin-top: 60px;
+  color: #ccc;
+}
