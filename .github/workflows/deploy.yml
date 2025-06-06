@@ -23,5 +23,5 @@ jobs:
 
     - name: Upload via SCP
       run: |
-        scp -r ./ tewenathan@91.166.93.238:/home/tewenathan/roulette
+        scp -P 22222 -r ./ tewenathan@91.166.93.238:/home/tewenathan/roulette
 
