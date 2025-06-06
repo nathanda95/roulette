@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 const App = () => {
-  const names = ['Rohan', 'Augustin', 'Mailys', 'Nathan', 'Alban', 'Tom'];
+  const names = ['Rohan 2', 'Augustin', 'Mailys', 'Nathan', 'Alban', 'Tom'];
   const [excludedNames, setExcludedNames] = useState([]);
   const SLOT_HEIGHT = 150;
 
