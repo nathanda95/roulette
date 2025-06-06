@@ -14,6 +14,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Build
+      run: npm ci && npm run build
+    
     - name: Setup SSH
       run: |
         mkdir -p ~/.ssh
@@ -23,5 +26,5 @@ jobs:
 
     - name: Upload via SCP
       run: |
-        scp -P 22222 -r ./ tewenathan@91.166.93.238:/home/tewenathan/roulette
+        scp -P 22222 -r dist/* tewenathan@91.166.93.238:/home/tewenathan/roulette
 
